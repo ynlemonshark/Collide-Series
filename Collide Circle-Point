@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int xc,yc,r,xp,yp;
+
+    int dx,dy;
+
+    scanf("%d %d %d", &xc, &yc, &r);
+    scanf("%d %d", &xp, &yp);
+
+    dx = xc-xp; dy = yc-yp;
+    dx*=dx; dy*=dy;
+
+    r*=r;
+
+    printf("%c", (r>dx+dy)?'O':'X');
+    
+    return 0;
+}
