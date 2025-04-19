@@ -13,7 +13,7 @@ int main() {
 
     r*=r;
 
-    printf("%c", (r>dx+dy)?'O':'X');
+    printf("%c", (r>=dx+dy)?'O':'X');
     
     return 0;
 }
