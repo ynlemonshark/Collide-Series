@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int x,y,w,h,xp,yp;
+
+    scanf("%d %d %d %d", &x, &y, &w, &h);
+    scanf("%d %d", &xp, &yp);
+
+    int condt1, condt2;
+    condt1 = (x<=xp && xp<=x+w)?1:0;
+    condt2 = (y<=yp && yp<=y+h)?1:0;
+
+    printf("%c", (condt1&condt2==1)?'O':'X');
+    
+    return 0;
+}
